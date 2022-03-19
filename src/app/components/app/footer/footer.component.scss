@@ -1,0 +1,24 @@
+.app-footer {
+  display: flex;
+  color: #a4a4a4;
+  font-size: 0.75rem;
+  justify-content: space-between;
+  align-items: center;
+
+  &__copyright {
+    font-weight: bold;
+  }
+
+  &__links {
+    display: flex;
+
+    &-item {
+      display: inline-flex;
+      margin-right: 16px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
