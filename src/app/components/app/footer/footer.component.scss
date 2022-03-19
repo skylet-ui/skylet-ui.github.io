@@ -1,7 +1,9 @@
+@import "theme";
+
 .app-footer {
   display: flex;
-  color: #a4a4a4;
-  font-size: 0.75rem;
+  color: $color-gray;
+  font-size: $font-sm;
   justify-content: space-between;
   align-items: center;
 
