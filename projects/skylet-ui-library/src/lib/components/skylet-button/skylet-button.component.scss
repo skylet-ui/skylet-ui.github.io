@@ -1,3 +1,40 @@
+@import "theme";
+
 .skylet-button {
   position: relative;
+  border-radius: $radius-md;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &--type {
+    &-primary {
+      background-color: $color-primary;
+    }
+
+    &-secondary {
+      background-color: $color-secondary;
+    }
+
+    &-ternary {
+      background-color: #fff;
+      color: $color-primary;
+    }
+  }
+
+  &--padding {
+    &-sm {
+      padding: $spacing-sm;
+    }
+
+    &-md {
+      padding: $spacing-md;
+    }
+
+    &-lg {
+      padding: $spacing-lg;
+    }
+  }
 }

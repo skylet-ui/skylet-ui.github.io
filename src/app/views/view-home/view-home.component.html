@@ -1,3 +1,16 @@
-<div class="view-home__title">&lt;skylet-ui /&gt;</div>
+<div class="view-home">
+  <div class="view-home__title">
+    <span>&lt;<strong>skylet-ui</strong>&nbsp;/&gt;</span>
+  </div>
 
-<a routerLink="/components">View components</a>
+  <div class="view-home__description">
+    A simple UI kit for Angular2+ applications
+  </div>
+
+  <skylet-button
+    class="view-home__button"
+    type="ternary"
+    content="View components"
+    (onClick)="handleViewComponents()"
+  ></skylet-button>
+</div>

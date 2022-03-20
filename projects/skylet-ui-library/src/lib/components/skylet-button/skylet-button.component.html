@@ -1,1 +1,12 @@
-<div class="skylet-button">[COMP] skylet-button</div>
+<div
+  [id]="id"
+  class="skylet-button"
+  [ngClass]="[
+    'skylet-button--type-' + type,
+    'skylet-button--padding-' + padding
+  ]"
+  [attr.data-qa]="dataQa"
+  (click)="handleClick()"
+>
+  <div>{{ content }}</div>
+</div>

@@ -1,4 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+
+import { SkyletButtonType } from './interfaces/skylet-button.interfaces';
 
 @Component({
   selector: 'skylet-button',
@@ -7,4 +9,14 @@ import { Component, Input } from '@angular/core';
 })
 export class SkyletButtonComponent {
   @Input() id = '';
+  @Input() dataQa = '';
+  @Input() type: SkyletButtonType = 'primary';
+  @Input() content = '';
+  @Input() padding = 'md';
+
+  @Output() onClick = new EventEmitter();
+
+  handleClick(): void {
+    this.onClick.emit();
+  }
 }

@@ -12,9 +12,9 @@ const routes: Routes = [
   {
     path: 'button',
     loadChildren: () =>
-      import(
-        '../../components/library/skylet-button/skylet-button-doc.module'
-      ).then((m) => m.SkyletButtonDocModule),
+      import('../../docs/skylet-button-doc/skylet-button-doc.module').then(
+        (m) => m.SkyletButtonDocModule
+      ),
   },
 ];
 

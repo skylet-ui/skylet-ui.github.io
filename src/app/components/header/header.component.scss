@@ -6,6 +6,8 @@
   padding: $spacing-md;
 
   &__title {
-    font-size: $font-lg;
+    display: inline-flex;
+    color: #fff;
+    font-size: $font-size-lg;
   }
 }

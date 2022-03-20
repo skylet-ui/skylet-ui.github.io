@@ -1,7 +1,57 @@
 @import "theme";
 
 .view-home {
+  display: flex;
+  min-height: 100vh;
+  background-color: $color-primary;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   &__title {
-    font-size: $font-xxlg;
+    display: inline-flex;
+
+    span {
+      display: inline-flex;
+      font-size: $font-size-xxxlg;
+      letter-spacing: 2.2px;
+      white-space: nowrap;
+      border-right: solid 3px #fff;
+      overflow: hidden;
+      animation: typing 2.4s steps(13, end), blink-caret 1.2s step-end infinite;
+      margin: 0 auto;
+    }
+  }
+
+  &__description {
+    font-size: $font-size-lg;
+    margin-top: $spacing-md;
+  }
+
+  &__button {
+    display: inline-flex;
+    margin-top: $spacing-xlg;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #fff;
   }
 }
