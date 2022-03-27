@@ -8,4 +8,6 @@ import { Component, Input } from '@angular/core';
 export class SkyletButtonDocComponent {
   @Input() size = 'sm';
   @Input() icon = '';
+
+  handleClick(): void {}
 }

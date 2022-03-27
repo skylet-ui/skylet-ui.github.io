@@ -8,7 +8,16 @@
   align-items: center;
 
   &__copyright {
+    display: flex;
     font-weight: bold;
+    align-items: center;
+  }
+
+  &__heart {
+    display: inline-flex;
+    color: #c00;
+    fill: #c00;
+    margin: 0 4px;
   }
 
   &__links {

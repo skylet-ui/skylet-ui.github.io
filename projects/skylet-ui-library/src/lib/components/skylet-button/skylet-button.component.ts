@@ -13,6 +13,7 @@ export class SkyletButtonComponent {
   @Input() type: SkyletButtonType = 'primary';
   @Input() content = '';
   @Input() padding = 'md';
+  @Input() textAlign: 'left' | 'center' | 'right' = 'left';
 
   @Output() onClick = new EventEmitter();
 

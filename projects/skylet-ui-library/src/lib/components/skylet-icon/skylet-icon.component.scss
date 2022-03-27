@@ -1,0 +1,35 @@
+.skylet-icon {
+  display: block;
+  stroke-width: 1.5;
+
+  &--filled {
+    fill: inherit;
+  }
+
+  &--size {
+    &-sm {
+      width: 16px;
+      height: 16px;
+    }
+
+    &-md {
+      width: 24px;
+      height: 24px;
+    }
+
+    &-lg {
+      width: 32px;
+      height: 32px;
+    }
+
+    &-xlg {
+      width: 48px;
+      height: 48px;
+    }
+
+    &-xxlg {
+      width: 64px;
+      height: 64px;
+    }
+  }
+}

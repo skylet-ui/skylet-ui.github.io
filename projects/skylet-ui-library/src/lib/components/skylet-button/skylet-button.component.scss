@@ -1,6 +1,7 @@
 @import "theme";
 
 .skylet-button {
+  display: flex;
   position: relative;
   border-radius: $radius-md;
   cursor: pointer;
@@ -12,6 +13,7 @@
   &--type {
     &-primary {
       background-color: $color-primary;
+      color: #fff;
     }
 
     &-secondary {
@@ -35,6 +37,20 @@
 
     &-lg {
       padding: $spacing-lg;
+    }
+  }
+
+  &--text-align {
+    &-left {
+      justify-content: flex-start;
+    }
+
+    &-center {
+      justify-content: center;
+    }
+
+    &-right {
+      justify-content: flex-end;
     }
   }
 }

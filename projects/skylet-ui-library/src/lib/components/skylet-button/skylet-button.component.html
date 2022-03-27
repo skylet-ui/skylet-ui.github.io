@@ -3,7 +3,8 @@
   class="skylet-button"
   [ngClass]="[
     'skylet-button--type-' + type,
-    'skylet-button--padding-' + padding
+    'skylet-button--padding-' + padding,
+    'skylet-button--text-align-' + textAlign
   ]"
   [attr.data-qa]="dataQa"
   (click)="handleClick()"

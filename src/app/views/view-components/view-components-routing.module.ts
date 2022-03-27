@@ -16,6 +16,13 @@ const routes: Routes = [
         (m) => m.SkyletButtonDocModule
       ),
   },
+  {
+    path: 'icon',
+    loadChildren: () =>
+      import('../../docs/skylet-icon-doc/skylet-icon-doc.module').then(
+        (m) => m.SkyletIconDocModule
+      ),
+  },
 ];
 
 @NgModule({
